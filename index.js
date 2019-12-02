@@ -13,7 +13,7 @@ app
     res.send({ items: await Item.findAll() });
   })
   .get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, PATH_TO_WEB_APP_BUILD, "index.html"));
+    res.sendFile(path.join(__dirname, "web-app/public", "index.html"));
   });
 
 const PORT = process.env.PORT || 8007;
