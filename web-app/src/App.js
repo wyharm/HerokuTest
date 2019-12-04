@@ -13,6 +13,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        yooo
         <ul>
           {this.state.items.map(item => (
             <li key={item.id}>{item.name}</li>
